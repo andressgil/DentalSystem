@@ -1,0 +1,1 @@
+import patientModel from "../models/patientModel.js"
