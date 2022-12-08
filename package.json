@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/andressgil/Syden/issues"
   },
-  "homepage": "https://github.com/andressgil/Syden#readme"
+  "homepage": "https://github.com/andressgil/Syden#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
