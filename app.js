@@ -11,7 +11,7 @@ app.listen(port, () => {
     console.log("El Servidor se esta ejecutando correctamente. ");
 })
 
-mongoose.connect("mongodb+srv://Syden:Syden@clustersyden.zoku9s3.mongodb.net/?retryWrites=true&w=majority", (err)=>{
+mongoose.connect("mongodb+srv://SydenApp:SydenApp@clustersydenapp.heb9m49.mongodb.net/syden-app?retryWrites=true&w=majority", (err)=>{
     if(err){
         console.log(err);
     }else{

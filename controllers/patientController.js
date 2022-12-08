@@ -17,54 +17,54 @@ export async function createPatient(req, res){
     res.status(201).json(paciente)
 }
 
-// //READ
-// export async function readPatient(req, res) {
-//     //implementacion aqui  
-//     const id = req.body.id
+//READ
+export async function readPatient(req, res) {
+      
+    const id = req.body.id
 
-//     let documento
+    let documento
 
-//     try {
-//         documento = await patientModel.findOne({"_id": id})
-//     } catch (error) {
-//         res.status(400).json(error.message)
-//         return
-//     }
+    try {
+        documento = await patientModel.findOne({"_id": id})
+    } catch (error) {
+        res.status(400).json(error.message)
+        return
+    }
 
-//     res.status(200).json(documento)
-// }
+    res.status(200).json(documento)
+}
 
-// //UPDATE
-// export async function updatePatient(req, res) {
+//UPDATE
+export async function updatePatient(req, res) {
   
-//     const cedula = req.params.cedula
-//     const updates = req.body.updates
+    const id = req.body.id
+    const updates = req.body.updates
 
-//     let documento
+    let documento
 
-//     try {
-//         documento = await patientModel.updateOne({"_id":id}, updates)//dentro de (la primer peticion es q busq ese id, con el segudo es q haga el cambio)
-//     } catch (error) {
-//         res.status(400).json(error.message)
-//         return
-//     }
+    try {
+        documento = await patientModel.updateOne({"_id":id}, updates)//dentro de (la primer peticion es q busq ese id, con el segudo es q haga el cambio)
+    } catch (error) {
+        res.status(400).json(error.message)
+        return
+    }
    
-//     res.status(200).json(documento)
-// }
+    res.status(200).json(documento)
+}
 
-// //DELETE
-// export async function deletePatient(req, res) {
-//     //implementacion aqui 
-//     const id = req.body.id
+//DELETE
+export async function deletePatient(req, res) {
   
-//     let documento = null
+    const id = req.body.id
+  
+    let documento = null
 
-//     try {
-//         documento = await patientModel.deleteOne({"_id": id})
-//     } catch (error) {
-//         res.status(400).json(error.message)
-//         return
-//     }
+    try {
+        documento = await patientModel.deleteOne({"_id": id})
+    } catch (error) {
+        res.status(400).json(error.message)
+        return
+    }
    
-//     res.status(200).json(documento)
-// }
+    res.status(200).json(documento)
+}
