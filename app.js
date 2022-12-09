@@ -1,6 +1,7 @@
 import express from "express"
 import mongoose from "mongoose";
 import patientRouter from "./routes/patientRouter.js";
+import quotesRouter from "./routes/quotesRouter.js";
 
 
 const app = express();
@@ -22,3 +23,4 @@ mongoose.connect("mongodb+srv://SydenApp:SydenApp@clustersydenapp.heb9m49.mongod
 
 app.use(express.json())
 app.use("/patient", patientRouter)
+app.use("/quotes", quotesRouter)
