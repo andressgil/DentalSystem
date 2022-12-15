@@ -14,7 +14,7 @@ export async function createPatient(req, res){
         return
     }
 
-    res.status(201).json(paciente)
+    res.status(201).json(documento)
 }
 
 //READ
