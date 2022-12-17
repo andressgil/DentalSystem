@@ -11,8 +11,8 @@ function Navbarhome() {
         <>
             <nav className='navbar'>
                 <ul className='menu flex container'>
-                    <li><Link to="/"><Logo size="34px" showText={true} /></Link> </li>
-                    <li><Link to="/"><Button style="wire">Inicio</Button></Link></li>
+                    <li><Link to="/inicio"><Logo size="34px" showText={true} /></Link> </li>
+                    <li><Link to="/inicio"><Button style="wire">Inicio</Button></Link></li>
                 </ul>
             </nav >
 

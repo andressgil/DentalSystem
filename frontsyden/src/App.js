@@ -5,6 +5,7 @@ import Navbar from "./components/ui/Navbar";
 import Home from "./views/home/Home";
 import Login from "./views/login/Login";
 import Patient from "./views/patient/Patient";
+import Quote from "./views/quote/Quote"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
 
       <Route path="/login" element={<Login />} />
       <Route path="/patient" element={<Patient />} />
+      <Route path="/quote" element={<Quote />} />
     </Routes>
   );
 }

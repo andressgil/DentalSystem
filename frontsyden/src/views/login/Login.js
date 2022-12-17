@@ -17,13 +17,14 @@ function Login() {
                 <form className='flex card form'>
                     <Input>Usuario</Input>
                     <Input type="password">Contraseña</Input>
-                    <Button style="fill">Iniciar Sesión</Button>
+                    <Link to="/inicio"><Button style="fill">Iniciar Sesión</Button></Link>
                 </form>
                 {/* <div className='patient card'>
                     <p>
                       <Link to="/Patient">Crear un Paciente</Link>
                     </p>
                 </div> */}
+                
             </div>
         </section>
     );
