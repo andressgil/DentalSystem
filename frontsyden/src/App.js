@@ -1,8 +1,23 @@
-import React from 'react';
-import "./assets/global.css"
-import Login from './components/Login';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import "./assets/global.css";
+import Navbar from "./components/ui/Navbar";
+import Home from "./views/home/Home";
+import Login from "./views/login/Login";
+import Patient from "./views/patient/Patient";
 
+function App() {
+  return (
+    <Routes>
+      <Route element={<Navbar />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<h1 className="container">About</h1>} />
+      </Route>
 
-export default function App() {
-    return (<Login></Login>)
+      <Route path="/login" element={<Login />} />
+      <Route path="/patient" element={<Patient />} />
+    </Routes>
+  );
 }
+
+export default App;

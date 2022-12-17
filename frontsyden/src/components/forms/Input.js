@@ -1,10 +1,14 @@
-import React from "react";
-import "./forms.css"
+import React from 'react';
 
+function Input(props) {
 
-
-export default function input(props) {
-    const{children, type} = props
-    return (<input className="input" type={type} placeholder={children}></input>)
+    const { children, type, placeholder } = props
+    return (
+        <label className='input'>
+            <b>{children}</b>
+            <input type={type} placeholder={placeholder}></input>
+        </label>
+    );
 }
-//style={type}
+
+export default Input;

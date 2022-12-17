@@ -1,11 +1,16 @@
-import React from "react";
+import React from 'react';
+
 import "./forms.css"
 
-function alerta(mensaje) {
-    alert(mensaje)
+function Button(props) {
+
+    const { children, type, onClick, style } = props
+
+    return (
+        <button className={style + "-button"} type={type} onClick={onClick}>
+            {children}
+        </button>
+    );
 }
 
-export default function Button(props) {
-    const{children} = props
-    return (<button className="button" onClick={() => alerta("Se ha iniciado sesión")}>{children} </button>)
-}
+export default Button;
