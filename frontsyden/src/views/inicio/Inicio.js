@@ -10,12 +10,14 @@ import "./Inicio.css"
 function Inicio() {
     return (
         <section className='inicio'>
-            <Navbarhome></Navbarhome>
+            
             <div className="container">
                 <Link to="/"><Logo showText={false} size="100px"/></Link>
                 
                 <form className='flex card form'>
-                    <Button style="fill">Crear</Button>
+                    <Link to="/patient"><Button style="fill" padding>Crear Paciente</Button></Link>
+                    <Link to="/quote"><Button style="fill">Crear Citas</Button></Link>
+
                 </form>
             </div>
         </section>

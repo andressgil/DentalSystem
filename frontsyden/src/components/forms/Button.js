@@ -4,10 +4,10 @@ import "./forms.css"
 
 function Button(props) {
 
-    const { children, type, onClick, style, size } = props
+    const { children, type, onClick, style, size, padding } = props
 
     return (
-        <button className={style + "-button"} type={type} onClick={onClick} size={size}>
+        <button className={style + "-button"} type={type} onClick={onClick} size={size} padding={padding}>
             {children}
         </button>
     );
