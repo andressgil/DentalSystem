@@ -9,9 +9,9 @@ import "./Login.css"
 function Login() {
     return (
         <section className='login'>
-            <Navbarhome></Navbarhome>
+            {/* <Navbarhome></Navbarhome> */}
             <div className="container">
-                <Link to="/"><Logo showText={false} size="100px"/></Link>
+                <Link to="/"><Logo showText={false} size="80px"/></Link>
                 <h1 className='title'><b>Iniciar Sesión</b></h1>
                 <p>¡Que gusto verte nuevamente!</p>
                 <form className='flex card form'>

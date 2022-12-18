@@ -21,3 +21,23 @@
     margin: 0 auto;
     justify-content: center;
 }
+
+.main-headline {
+    margin-top: 9rem;
+    font-weight: 700;
+}
+
+.main-headline .title {
+    font-size: 28px;
+    color: var(--main-color);
+}
+
+.main-headline .content {
+    font-size: 48px;
+    color: var(--main-color);
+}
+
+.supp-headline {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

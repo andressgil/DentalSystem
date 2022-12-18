@@ -1,5 +1,5 @@
 .main-headline {
-    margin-top: 5rem;
+    margin-top: 9rem;
     font-weight: 700;
 }
 
@@ -38,7 +38,7 @@
 
     .header .illustration {
         grid-row: 1;
-        border-radius: 15%;
+        border-radius: 30%
     }
 
 }

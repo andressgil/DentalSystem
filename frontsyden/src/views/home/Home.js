@@ -16,10 +16,10 @@ function Home() {
                         <p className='title'>Somos</p>
                         <p className='content'>TU MEJOR OPCIÓN</p>
                     </div>
-                    {/* <p className='supp-headline'>
+                    <p className='supp-headline'>
                         Maneja eficientemente tu tiempo con <b>Syden App</b>.
                     </p>
-                    <Link to="/patient"><Button style="fill">Crear Paciente</Button></Link> */}
+                    <Link to="/patient"><Button style="fill">Crear Paciente</Button></Link>
                 </GridColumn>
 
                 <GridColumn className="illustration" column="span 3">
