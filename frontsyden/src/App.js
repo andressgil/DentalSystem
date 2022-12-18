@@ -6,6 +6,8 @@ import Home from "./views/home/Home";
 import Login from "./views/login/Login";
 import Patient from "./views/patient/Patient";
 import Quote from "./views/quote/Quote"
+import Inicio from "./views/inicio/Inicio"
+import Inscription from "./views/inscription/Inscription"
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       <Route path="/patient" element={<Patient />} />
       <Route path="/quote" element={<Quote />} />
       <Route path="/inicio" element={<Inicio />} />
+      <Route path="/inscription" element={<Inscription/>} />
 
     </Routes>
   );
