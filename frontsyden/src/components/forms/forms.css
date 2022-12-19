@@ -8,6 +8,19 @@
     cursor: pointer;
 }
 
+.inicio-button {
+    border-color: var(--enf-color);
+    border-radius: var(--default-radius);
+    background-color: #41aee9;
+    border-color: var(--enf-color);
+    color: white;
+    padding: 3rem 3rem ;
+    font-weight: 700;
+    transition: 0.2s;
+    cursor: pointer;
+    position: center;
+}
+
 .fill-button {
     background-color: var(--enf-color);
     border-color: var(--enf-color);

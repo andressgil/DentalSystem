@@ -1,10 +1,9 @@
 import React from 'react';
-import Button from '../../components/forms/Button';
 import "./Home.css"
 // // @ts-ignore
 import illustration from "../../assets/home_illustration.jpg"
 import GridColumn from '../../components/GridColumn';
-import { Link } from 'react-router-dom';
+
 
 function Home() {
     return (

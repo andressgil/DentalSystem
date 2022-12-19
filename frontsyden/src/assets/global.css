@@ -23,7 +23,7 @@ body * {
 :root {
     --text-color: rgb(86, 86, 86);
     --main-color: #295E6A;
-    --enf-color: #31cc52;
+    --enf-color: #41aee9;
     --border-color: #DFEFF0;
     --default-radius: 0.3rem;
     --default-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
