@@ -21,3 +21,7 @@
     margin: 0 auto;
     justify-content: center;
 }
+
+.quote .fill-button{
+    width: 100%;
+}

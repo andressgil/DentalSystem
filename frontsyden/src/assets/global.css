@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
 
 body {
     margin: 0;
@@ -75,9 +75,8 @@ a {
 }
 
 .card {
-    display: flex;
     border-radius: var(--default-radius);
     box-shadow: var(--default-shadow);
     padding: 2rem;
-    gap: 1rem;
+    
 }

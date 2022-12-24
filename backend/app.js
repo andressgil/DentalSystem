@@ -1,3 +1,4 @@
+import cors from "cors";
 import express from "express"
 import mongoose from "mongoose";
 import patientRouter from "./routes/patientRouter.js";
@@ -24,6 +25,9 @@ mongoose.connect("mongodb+srv://SydenApp:SydenApp@clustersydenapp.heb9m49.mongod
     
 })
 
+app.use(cors({
+    origin: "localhost:3000"
+}))
 app.use(express.json())
 app.use("/patient", patientRouter)
 app.use("/quotes", quotesRouter)
